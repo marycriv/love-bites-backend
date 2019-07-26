@@ -19,6 +19,16 @@ class BitesController < ActionController::API
     render json: @bite
   end
 
+  def edit
+    @bite = Bite.find(params[:id])
+  end
+
+  def update
+    @bite = Bite.find(params[:id])
+    @bite.update(bite_params)
+    render json: @bite.to_json
+  end
+
   private
 
   def bite_params
