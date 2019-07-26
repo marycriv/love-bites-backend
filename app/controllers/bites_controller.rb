@@ -10,6 +10,15 @@ class BitesController < ActionController::API
     render json: @bite
   end
 
+  def new
+    @bite = Bite.new
+  end
+
+  def create
+    @bite = Bite.find_or_create_by(bite_params)
+    render json: @bite
+  end
+
   private
 
   def bite_params
