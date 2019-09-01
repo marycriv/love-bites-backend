@@ -1,6 +1,6 @@
 # README
 
-Rails backend for Love Bites, a dating app for vampires. Front end written in React.
+Rails backend for Love Bites, a dating app for vampires. Front end written in React. Deployed with Heroku. 
 
 Made with:
 * ruby 2.6.3p62
